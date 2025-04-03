@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white shadow-md rounded-lg p-6;
+  }
+
+  .heading-1 {
+    @apply text-3xl font-bold text-gray-900;
+  }
+
+  .heading-2 {
+    @apply text-2xl font-semibold text-gray-900;
+  }
+
+  .paragraph {
+    @apply text-gray-700 leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
